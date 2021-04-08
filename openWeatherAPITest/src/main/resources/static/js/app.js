@@ -1,7 +1,7 @@
 var app = (function () {
     var buscaCity = function () {
         var city = document.getElementById("city").value;
-        fetch('https://vanegas-arsw-t2.herokuapp.com/weather/city/'+city)
+        fetch('http://locallhost:8080/weather/city/'+city)
             .then(response => response.json())
             .then(json => mostrar(json))
             .catch(err => {
